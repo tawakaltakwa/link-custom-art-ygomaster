@@ -1,5 +1,5 @@
 # Deskripsi
-Custom Art Cards untuk [YgoMaster](https://github.com/pixeltris/YgoMaster). Custom Art Cards milikmu (buatanmu sendiri atau asset hasil download dari web) menggunakan nama file berdasarkan ID kartu cetak, sedangkan YgoMaster menggunakan ID tersendiri sesuai Master Duel. Script ini membuat salinan gambar dan/atau symbolik link dengan mengganti nama sesuai dengan ID master duel ke direktori ClientData di YgoMaster. Membutuhkan [cards.cdb](custom/cards.cdb) (direpo ini cards.cdb hasil salinan dari instalasi KoishiPro)
+Custom Art Cards untuk [YgoMaster](https://github.com/pixeltris/YgoMaster). Custom Art Cards milikmu (buatanmu sendiri atau asset hasil download dari web) menggunakan nama file berdasarkan ID kartu cetak, sedangkan YgoMaster menggunakan ID tersendiri sesuai Master Duel. Script ini membuat salinan gambar dan/atau symbolik link dengan mengganti nama sesuai dengan ID master duel ke direktori ClientData di YgoMaster. Membutuhkan [cards.cdb](custom/cards.cdb) (direpo ini cards.cdb hasil salinan dari instalasi [KoishiPro](https://koishi.pro/))
 
 # Cara Kerja Script
 1. Membaca file gambar dari YgoMaster/custom/Kartu (atau custom/kartu).
@@ -8,7 +8,7 @@ Custom Art Cards untuk [YgoMaster](https://github.com/pixeltris/YgoMaster). Cust
 Membuat symlink (atau opsi copy) ke YgoMaster/Data/ClientDataDump/Card/Images/Illust/tcg/<md_id>.png.
 
 # Penggunaan
-Jalankan perintah dari folder utama game atau folder YgoMaster:
+Simpan file [link_custom_art.py](link_custom_art.py) dan folder [custom](custom/) di folder YgoMaster dan Jalankan perintah:
 1. Simulasi (Dry Run) tanpa mengubah file apa pun:
     ```
     python3 YgoMaster/link_custom_art.py --dry-run
