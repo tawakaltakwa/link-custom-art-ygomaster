@@ -78,10 +78,10 @@ def clean_target(clean_path, dry_run=False):
 
 def main():
     parser = argparse.ArgumentParser(description="Map custom card arts from printed passcode to Master Duel ID or clean installed arts.")
-    parser.add_argument("--src", default="YgoMaster/custom/Kartu", help="Folder sumber custom art (default: YgoMaster/custom/Kartu)")
-    parser.add_argument("--dst", default="YgoMaster/Data/ClientData/Card/Images/Illust/tcg", help="Folder tujuan (default: ClientData/Card/Images/Illust/tcg)")
-    parser.add_argument("--ydk", default="YgoMaster/Data/YdkIds.txt", help="Path ke YdkIds.txt")
-    parser.add_argument("--cdb", default="YgoMaster/custom/cards.cdb", help="Path ke cards.cdb")
+    parser.add_argument("--src", default="custom/Kartu", help="Folder sumber custom art (default: custom/Kartu)")
+    parser.add_argument("--dst", default="Data/ClientData/Card/Images/Illust/tcg", help="Folder tujuan (default: ClientData/Card/Images/Illust/tcg)")
+    parser.add_argument("--ydk", default="Data/YdkIds.txt", help="Path ke YdkIds.txt")
+    parser.add_argument("--cdb", default="custom/cards.cdb", help="Path ke cards.cdb")
     parser.add_argument("--copy", action="store_true", help="Gunakan penyalinan (copy) alih-alih symlink")
     parser.add_argument("--force", action="store_true", help="Timpa file yang sudah ada di folder tujuan")
     parser.add_argument("--dry-run", action="store_true", help="Hanya tampilkan simulasi tanpa membuat/menghapus file")
